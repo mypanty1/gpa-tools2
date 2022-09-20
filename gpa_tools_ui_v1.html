@@ -126,6 +126,7 @@
 				data:()=>({
 					tabs:[
 						{name:'tasks',title:'наряды',selected:false,disabled:false},
+						{name:'inetcore',title:'inetcore',selected:false,disabled:false},
 						{name:'actions',title:'актив',selected:true,disabled:false},
 						{name:'actions2',title:'актив2',selected:false,disabled:false},
 						{name:'history',title:'история',selected:false,disabled:true},
@@ -958,11 +959,15 @@
 			Vue.component("wfm-el",{
 				template:`<iframe wfm-el src="https://wfmmobile.mts.ru/"/>`,
 			});
+			Vue.component("inetcore-el",{
+				template:`<iframe inetcore-el src="https://fx.mts.ru/"/>`,
+			});
 			const app=new Vue({
 				el:'#app',
 				template:`<div app>
 					<header-tabs-el @on-select="(name)=>{mode=name}"/>
 					<content-el v-show="mode==='tasks'"><!--<tasks-el/>--><wfm-el/></content-el>
+					<content-el v-show="mode==='inetcore'"><inetcore-el/></content-el>
 					<content-el v-show="mode==='actions'"><actions-selector-el/></content-el>
 					<content-el v-show="mode==='actions2'"><actions2-selector-el/></content-el>
 					<content-el v-show="mode==='history'"><history-el/></content-el>
