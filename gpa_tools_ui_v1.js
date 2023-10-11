@@ -615,7 +615,7 @@ Vue.component("Actions2Content",{
       {value:'ARENDABU',label:'аренда б/у'},
     ],
     hardTypes:[
-      {value:'С',label:'САМ-модуль'},
+      {value:'C',label:'САМ-модуль'},
       {value:'D',label:'HD приставка'},
       {value:'S',label:'SD приставка'},
       {value:'K',label:'смарт-карта'},
