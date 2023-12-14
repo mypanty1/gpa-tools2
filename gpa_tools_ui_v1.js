@@ -361,7 +361,7 @@ Vue.component("ActionsContent",{
     },
     itv:{
       itv_id:'',
-      models:['DC300a','DV8304C','A110','A130','GIU6390','DID7005','DTP9514','VIP1003','SL282B','SL292P','SML482','ZTEB7','ZXV10B866','ZXV10B866v2','B866V3','DCD5325'],
+      models:['DV8304C','DV9157C','DC300a','A110','A130','GIU6390','DID7005','DTP9514','VIP1003','SL282B','SL292P','SML482','ZTEB7','ZXV10B866','ZXV10B866v2','B866V3','DCD5325'],
       model:'',
       itv_model:'',
     },
@@ -662,6 +662,7 @@ Vue.component("Actions2Content",{
       {value:'DID7005stb',label:'DID7005vCS'},
       {value:'DC300a',label:'Huawei DC300a'},
       {value:'DV8304C',label:'SuperWave DV8304-C 4K Android'},
+      {value:'DV9157C',label:'SDMC DV9157-C 4K Android'},
       {value:'ZTEB7stb',label:'ZTE ZXB700V7'},
       {value:'B866stb',label:'ZTE ZXV10 B866 Android'},
       {value:'nomodel',label:'без модели'},
