@@ -45,12 +45,12 @@ Vue.component("HeaderTabs",{
   data:()=>({
     tabs:[
       {name:'tasks',title:'наряды',selected:false,disabled:false},
-      {name:'inetcore',title:'inetcore',selected:false,disabled:false},
+      {name:'inetcore',title:'Inetcore',selected:false,disabled:false},
       {name:'actions',title:'актив',selected:true,disabled:false},
       {name:'actions2',title:'актив2',selected:false,disabled:false},
       {name:'history',title:'история',selected:false,disabled:true},
-      {name:'ping54',title:'ping54',selected:false,disabled:false},
-      {name:'Test',title:'Test',selected:false,disabled:false},
+      {name:'ping54',title:'Ping54',selected:false,disabled:false},
+      {name:'Test',title:'Test',selected:false,disabled:true},
     ],
   }),
   created(){},
