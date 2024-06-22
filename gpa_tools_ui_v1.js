@@ -50,6 +50,7 @@ Vue.component("HeaderTabs",{
       {name:'actions2',title:'актив2',selected:false,disabled:false},
       {name:'history',title:'история',selected:false,disabled:true},
       {name:'ping54',title:'ping54',selected:false,disabled:false},
+      {name:'Test',title:'Test',selected:false,disabled:false},
     ],
   }),
   created(){},
@@ -885,6 +886,9 @@ Vue.component("IframeWfm",{
 Vue.component("IframeInetcore",{
   template:`<iframe IframeInetcore src="https://fx.mts.ru/"/>`,
 });
+Vue.component("IframeTest",{
+  template:`<iframe IframeTest src="https://fx.mts.ru/fix#/TechMaintenance/Last/9135155037513569210"/>`,
+});
 
 Vue.component('UISelect', {
   template:`<section name="UISelect" :class="elClass" :style="{'background-color':disabled?'#f1f1f1':''}">
@@ -1095,6 +1099,7 @@ const app=new Vue({
     <TabSection v-show="mode==='actions2'"><Actions2Content/></TabSection>
     <TabSection v-show="mode==='history'"><IframeHistory/></TabSection>
     <TabSection v-show="mode==='ping54'"><IframePing54/></TabSection>
+    <TabSection v-show="mode==='Test'"><IframeTest/></TabSection>
   </div>`,
   components:{},
   data:()=>({
